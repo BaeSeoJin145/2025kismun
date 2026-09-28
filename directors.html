@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>KISMUN’25 – Directors</title>
+  <link rel="stylesheet" href="/assets/styles.css"/>
+  <link rel="icon" href="/assets/logo.png" type="image/png">
+  <style>
+    .staff-card {
+      padding: 2rem;
+      background: rgba(255,255,255,0.08);
+      border-radius: 12px;
+    }
+    .staff-card img {
+      border-radius: 12px;
+    }
+    .staff-card .name {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+    .staff-card .role {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    /* Tom 선생님 전용 카드 (메시지 있음) */
+    .staff-card.with-message {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+      text-align: left;
+    }
+    .staff-card.with-message img {
+      width: 220px;
+      height: auto;
+      flex-shrink: 0;
+      margin-bottom: 0;
+    }
+    .staff-card.with-message .text {
+      flex: 1;
+    }
+    .staff-card.with-message p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    .signature {
+      margin-top: 1.5rem;
+      font-style: italic;
+    }
+
+    /* 반응형 (모바일에서 세로 배치) */
+    @media (max-width: 768px) {
+      .staff-card.with-message {
+        flex-direction: column;
+        text-align: center;
+      }
+      .staff-card.with-message img {
+        margin: 0 auto 1.5rem auto;
+      }
+      .staff-card.with-message .text {
+        text-align: left; /* 본문은 가독성을 위해 왼쪽 정렬 유지 */
+      }
+    }
+  </style>
+</head>
+<body class="directors-page">
+
+<!-- NAVBAR -->
+<header class="nav">
+  <div class="container inner">
+    <div class="brand">
+      <div class="brand__logo"></div>
+      <div class="brand__name">KISMUN’25</div>
+    </div>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="conference.html">Conference Information</a>
+      <a href="country-allocation.html">Country Allocation</a>
+      <a href="committee.html">Committee</a>
+      <a href="secretariats.html">Secretariat</a>
+      <a href="staff.html">Staff</a>
+      <a href="directors.html" class="active">Directors</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>DIRECTORS</h1>
+  </div>
+</section>
+
+<!-- DIRECTORS -->
+<section class="section">
+  <div class="container" style="display:grid; grid-template-columns:1fr; gap:3rem;">
+
+    <!-- Director 1 (Tom) -->
+    <div class="staff-card with-message">
+      <img src="./img/directors/mrTom.jpg" alt="Director 1">
+      <div class="text">
+        <div class="name">Tom Maciariello</div>
+        <div class="role">Director</div>
+        <p>Dear Delegates, Respected Guests, and Distinguished Participants,</p>
+        <p>On behalf of KIS and the Leadership Development Program, we are delighted to welcome you to the 2025 Korean International School Model United Nations conference. We are thrilled that you have joined us with many other young leaders to engage in diplomacy, thoughtful discussions, and global solutions.</p>
+        <p>We envision this conference to be a valuable opportunity for you to take on the representation of a number of countries from around the world, engage with each other in pressing international issues, and collaborate with your fellow delegates. MUN is certainly not only about discussing policy matters, but also about negotiations, public speaking, and learning from each other's perspectives, interests, and experiences.</p>
+        <p>As your director, I have the pleasure of leading you through this experience, and I look forward to supporting you along the way as we create an atmosphere of respect, cooperation, and conversation. Whether this is your first Model UN or you're a veteran delegate, we cannot wait to witness the engaging discussions and common ground established in the tradition of diplomacy and negotiation.</p>
+        <p>Calculating ways to resolve the most challenging issues around the world requires skill, persuasiveness, and a healthy sense of competition. Remember though, Model UN is about more than debate and resolutions; it is about where courage leads you. Keep this in mind throughout the conference, and I wish you an enjoyable, engaging, successful, and excellent conference experience!</p>
+        <p class="signature">Warm Regards,<br>KISMUN 2025 MUN Director – Tom Maciariello</p>
+      </div>
+    </div>
+
+    <!-- Director 2 (Lee Ji Yeon, no message) -->
+    <div class="staff-card" style="text-align:center;">
+      <img src="./img/directors/ljy.jpg" alt="Director 2" style="width:240px; height:auto; margin-bottom:1.5rem;">
+      <div class="name">Lee Ji Yeon</div>
+      <div class="role">Director</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="small">
+      © 2025 KISMUN. All Rights Reserved.<br>
+      Designed & Developed by the KISMUN Web Master Team.
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

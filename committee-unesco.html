@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>KISMUN’25 – UNESCO</title>
+  <link rel="stylesheet" href="/assets/styles.css"/>
+  <link rel="icon" href="/assets/logo.png" type="image/png">
+  <style>
+    .card.panel {
+      padding: 2rem;
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+    .card.panel h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    /* 인물 + 편지 레이아웃 */
+    .letter {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+    .letter .person__img img {
+      border-radius: 12px;
+      max-width: 200px;
+      height: auto;
+    }
+    .letter .content {
+      flex: 1;
+      text-align: left; /* ✅ 텍스트만 왼쪽 정렬 */
+    }
+    .letter p {
+      margin-bottom: 1rem;
+    }
+    .letter .signature {
+      margin-top: 1.5rem;
+      font-style: italic;
+    }
+
+    @media (max-width: 768px) {
+      .letter {
+        flex-direction: column;
+        text-align: left;
+      }
+      .letter .person__img {
+        text-align: center;
+      }
+      .letter .person__img img {
+        margin-bottom: 1rem;
+      }
+    }
+
+    /* Chair Report */
+    .chair-report {
+      background: rgba(255,255,255,0.08);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+    .chair-report a.btn {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #0f2a47;
+      border: 1px solid #1c3b63;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.8rem 1.6rem;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: all 0.25s;
+    }
+
+    /* Gallery */
+    .photobooth h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+    .gallery img {
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+      width: 100%;
+    }
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body class="unesco-page">
+
+<header class="nav">
+  <div class="container inner">
+    <div class="brand">
+      <div class="brand__logo"></div>
+      <div class="brand__name">KISMUN’25</div>
+    </div>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="conference.html">Conference Information</a>
+      <a href="country-allocation.html">Country Allocation</a>
+      <a href="committee.html">Committee</a>
+      <a href="secretariats.html">Secretariat</a>
+      <a href="staff.html">Staff</a>
+      <a href="directors.html">Directors</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>UNESCO</h1>
+    <div class="spacer"></div>
+  </div>
+</section>
+
+<!-- MAIN SECTION -->
+<section id="report" class="section">
+  <div class="container" style="max-width:900px; margin:0 auto;">
+
+    <!-- HEAD CHAIR LETTER -->
+    <article class="card panel">
+      <div class="letter">
+        <div class="person__img">
+          <img src="./img/unesco/head.jpg" alt="Head Chair photo">
+        </div>
+        <div class="content">
+          <div class="person__name" style="font-size:1.4rem; font-weight:600;">Kaeul Park</div>
+          <div class="person__role" style="font-size:1.05rem; margin-bottom:1rem;">Head Chair</div>
+          <h3>Chair Letter</h3>
+          <p>Honorable chairs, esteemed delegates, distinguished directors, and respected staff,</p>
+          <p>It is my profound honor to welcome you to KISMUN 2025. My name is Kaeul Park, and I have the privilege of serving as the Heady Chair of UNESCO, alongside my deputy chair, Ubin Kou. We are genuinely delighted to guide you through this conference and look forward to witnessing your voices shape constructive and meaningful debates within our committee.</p>
+          <p>Reminiscing on the beginning of my MUN journey, my first step goes back to grade 9 in KISMUN 2023. Standing in the committee room, the fear of raising my placard felt overwhelming — I could hear my heartbeat racing, and my hands trembled with nerves. I was often consumed by doubt, questioning whether my words carried any substance or value. The weight of self-criticism and the fear of inadequacy left me disheartened, yet I gradually came to recognize that these very struggles were indispensable to my growth. They taught me that MUN is not a stage for immediate perfection, but a space where one learns to confront hesitation and discover inner strength.</p>
+          <p>This year’s theme, ‘TO WHERE COURAGE LEADS YOU,’ speaks directly to that lesson. For some of you, courage will mean raising your placard for the first time. For others, it may mean listening deeply to perspectives different from your own, or leading your bloc through moments of uncertainty. Nevertheless, no matter the form it takes, I hope you allow the courage to guide you into new ideas, into growth, and into confidence you may not have known you possessed.</p>
+          <p>Over the next three days, you will face challenges or perhaps even doubts. But remember, these very moments are what make MUN transformative. Let your courage lead you forward, and by the end of this conference, I believe each of you will leave not only with improved skills, but also with a renewed sense of who you are becoming.</p>
+          <p>I look forward to seeing passion as well as your determination lighting up our committee. Let’s make KISMUN 2025 a place where courage writes the next chapter of your journey.</p>
+          <p class="signature">Best regards,<br>Kaeul Park,<br>Head chair of United Nations Educational, Scientific, and Cultural Organization,<br>KISMUN 2025.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- DEPUTY CHAIR LETTER -->
+    <article class="card panel">
+      <div class="letter">
+        <div class="person__img">
+          <img src="./img/unesco/deputy.jpg" alt="Deputy Chair photo">
+        </div>
+        <div class="content">
+          <div class="person__name" style="font-size:1.4rem; font-weight:600;">Ubin Kou</div>
+          <div class="person__role" style="font-size:1.05rem; margin-bottom:1rem;">Deputy Chair</div>
+          <h3>Chair Letter</h3>
+          <p>Honorable chairs, esteemed delegates, student officers, staff, and respected directors, welcome to KISMUN 2025! This is Ubin, and it is my great honor to serve you as the deputy chair of UNESCO. With Kaeul Park, the head chair of UNESCO, we genuinely look forward to hearing your voices and helping to build a constructive conference.</p>
+          <p>To talk about my MUN experience, my first step toward the MUN began in 9th grade, an attempt to simply observe and get a taste of what the conference experience felt like. At the time, I didn’t contribute much beyond a few POIs; I never gave a speech, nor did I fully engage in the intensity of debate. Looking back, now I realize how much I had underestimated the value of that opportunity.</p>
+          <p>During the conference, I couldn’t shake off the feeling that I was wasting my time, not because the event lacked meaning, but because I had chosen to remain within my comfort zone. That regret became a powerful turning point in my MUN journey. I learned that MUN is not just about speaking, it is about ‘growing’. It is about stepping up, leaning into discomfort, and embracing the challenge of pushing past self-imposed limits.</p>
+          <p>As you prepare to step into three days of rigorous debate, collaboration, and negotiation, I hope you embrace every moment with open-mindedness and boldness. You may find yourself challenged, questioned, or even uncertain at times, and that is exactly where growth begins. Whether you are an experienced delegate or a first-time delegate, this conference will offer something more than awards or resolutions. It provides a chance to find your voice, deepen your understanding, and expand your worldview.</p>
+          <p>So I hope you follow wherever courage leads you, into new perspectives, into difficult questions, into moments of vulnerability and strength alike. Because in the end, it is not perfection that defines a great delegate, but the willingness to try. And that courage is what will stay with you, long after the gavels fall. Good luck!</p>
+          <p class="signature">Sincerely,<br>Ubin Kou,<br>Deputy chair of United Nations Educational, Scientific, and Cultural Organization,<br>KISMUN 2025.</p>
+        </div>
+      </div>
+    </article>
+
+<!-- SHORT CHAIR REPORT -->
+<section class="card panel chair-report">
+  <h3>Chair Report</h3>
+
+  <a 
+    href="./chair-report/UNESCO/KISMUN25_UNESCO_01_ The question of Promoting Equitable Access to Quality Education Across All Regions.pdf" 
+    class="btn primary" 
+    target="_blank">
+    View Report 1
+  </a>
+
+  <a 
+    href="./chair-report/UNESCO/KISMUN25_UNESCO_2_ Establishing International Strategies for the Protection and Restoration of Cultural Heritage in Conflict Zones.pdf" 
+    class="btn primary" 
+    target="_blank">
+    View Report 2
+  </a>
+</section>
+
+  </div>
+</section>
+
+<section class="section photobooth">
+  <div class="container" style="text-align:center;">
+    <h2 style="margin-bottom:1.5rem;">KISMUN’25 UNESCO GALLERY</h2>
+    <p style="margin-bottom:1.5rem;">Photography by Sae Jong Kwon & Ye Eun Hwang</p>
+    <div class="gallery" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1rem; margin-bottom:2rem;">
+      <img src="./photogallery/unesco/DSC00432.JPG" alt="Photo 1" style="aspect-ratio: 3 / 2; object-fit: cover; border-radius: 8px;">
+      <img src="./photogallery/unesco/DSC00462.JPG" alt="Photo 2" style="aspect-ratio: 3 / 2; object-fit: cover; border-radius: 8px;">
+      <img src="./photogallery/unesco/IMG_1846.JPG" alt="Photo 3" style="aspect-ratio: 3 / 2; object-fit: cover; border-radius: 8px;">
+    </div>
+    <a href="https://drive.google.com/drive/folders/1mP0Gdb1SIfS_ukakDqNgNihxBpPmzj68?usp=sharing" target="_blank" class="btn" style="background:#0f2a47; border:1px solid #1c3b63; color:#fff; text-decoration:none; padding:0.8rem 1.6rem; border-radius:6px; font-weight:600; transition:all 0.25s;">
+      View Full Gallery →
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="small">
+      © 2025 KISMUN. All Rights Reserved.<br>
+      Designed & Developed by the KISMUN Web Master Team.
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox"><img alt=""/></div>
+<script src="assets/app.js"></script>
+</body>
+</html>

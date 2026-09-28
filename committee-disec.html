@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>KISMUN’25 – DISEC</title>
+  <link rel="stylesheet" href="/assets/styles.css"/>
+  <link rel="icon" href="/assets/logo.png" type="image/png">
+  <style>
+    /* 공통 카드 스타일 */
+    .card.panel {
+      padding: 2rem;
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+    .card.panel h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    /* 인물 + 편지 레이아웃 */
+    .letter {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+    .letter .person__img img {
+      border-radius: 12px;
+      max-width: 200px;
+      height: auto;
+    }
+    .letter .content {
+      flex: 1;
+      text-align: left; /* ✅ 텍스트만 왼쪽 정렬 */
+    }
+    .letter p {
+      margin-bottom: 1rem;
+    }
+    .letter .signature {
+      margin-top: 1.5rem;
+      font-style: italic;
+    }
+
+    /* 모바일에서는 세로 배치 */
+    @media (max-width: 768px) {
+      .letter {
+        flex-direction: column;
+        text-align: left;
+      }
+      .letter .person__img {
+        text-align: center;
+      }
+      .letter .person__img img {
+        margin-bottom: 1rem;
+      }
+    }
+
+    /* Chair Report */
+    .chair-report {
+      background: rgba(255,255,255,0.08);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+    .chair-report a.btn {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #0f2a47;
+      border: 1px solid #1c3b63;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.8rem 1.6rem;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: all 0.25s;
+    }
+
+    /* Gallery */
+    .photobooth h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+    .gallery img {
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+      width: 100%;
+    }
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body class="disec-page">
+
+<header class="nav">
+  <div class="container inner">
+    <div class="brand">
+      <div class="brand__logo"></div>
+      <div class="brand__name">KISMUN’25</div>
+    </div>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="conference.html">Conference Information</a>
+      <a href="country-allocation.html">Country Allocation</a>
+      <a href="committee.html">Committee</a>
+      <a href="secretariats.html">Secretariat</a>
+      <a href="staff.html">Staff</a>
+      <a href="directors.html">Directors</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>DISEC</h1>
+    <div class="spacer"></div>
+  </div>
+</section>
+
+<!-- MAIN SECTION -->
+<section id="report" class="section">
+  <div class="container" style="max-width:900px; margin:0 auto;">
+
+    <!-- HEAD CHAIR LETTER -->
+    <article class="card panel">
+      <div class="letter">
+        <div class="person__img">
+          <img src="./img/disec/head.jpg" alt="Head Chair photo">
+        </div>
+        <div class="content">
+          <div class="person__name" style="font-size:1.4rem; font-weight:600;">Hojin Han</div>
+          <div class="person__role" style="font-size:1.05rem; margin-bottom:1rem;">Head Chair</div>
+          <h3>Chair Letter</h3>
+          <p>Fellow chairs, honorable delegates, staff, and respected directors,</p>
+          <p>I am Hojin Han, the head chair of DISEC. It is beyond my great pleasure to serve you in the committee room. I will ensure that I oversee the committee with fairness and full commitment. You can always reach out if you experience any discomfort during the conference.</p>
+          <p>Through the three days of your journey, I hope each of you to be guided by courage. Nobody is perfect, and setbacks are steps forward in your success. Looking back on my own Model UN journey, I began as a quiet delegate who was often too afraid to raise his placard. Like many others, my first conference was far from successful. However, instead of giving up, I chose to take a chance. I raised my placard a little higher, asked questions, and delivered a few speeches with a little more volume. That small step gave me the courage I needed, and now here I am, writing this letter as your head chair. So, I want you to push yourself, whether you are just starting or experienced. Because each of you deserves to be the best version of yourself and to be led by courage.</p>
+          <p class="signature">Best,<br>Hojin Han<br>Head Chair of the Disarmament and International Security Committee, KISMUN’25</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- DEPUTY CHAIR LETTER -->
+    <article class="card panel">
+      <div class="letter">
+        <div class="person__img">
+          <img src="./img/disec/deputy.jpg" alt="Deputy Chair photo">
+        </div>
+        <div class="content">
+          <div class="person__name" style="font-size:1.4rem; font-weight:600;">Serin Kim</div>
+          <div class="person__role" style="font-size:1.05rem; margin-bottom:1rem;">Deputy Chair</div>
+          <h3>Chair Letter</h3>
+          <p>Honorable chairs, esteemed delegates, respected directors, staff, guests, and all participants of KISMUN 2025, welcome. I’m Serin Kim, and it is a true honor to serve you as the chair of the Disarmament and International Security Committee (DISEC) for this year’s conference.</p>
+          <p>I’d like to begin my letter by sharing something small that I’ve come to realize over time, thinking back on my MUN journey. The start of my MUN journey was a few years ago, and I still remember how nervous I was when I first stepped into a MUN committee room, unsure if I would find my voice or keep up with the debate. But over time, as I participated in more conferences, I came to realize something important: MUN isn’t just about facts or coming up with resolutions - it is about overcoming those moments when you feel challenged, when you hesitate to raise your placard, or when you face problems without clear answers. Those moments could be, actually, overwhelming, but the important thing here is that they help us grow. I’d like to say that MUN is your stage, where you can discover your hidden strengths and voice.</p>
+          <p>That’s exactly what I hope DISEC will be for you during this KISMUN. Whether this is your very first conference or one of many, I want this committee to be a space where you feel safe and confident to try, to speak, to ask, to fail, and to grow. You don’t have to be the loudest or the most experienced delegate in the committee. All you need is the willingness to engage and the courage to raise your placard even when you’re unsure.</p>
+          <p>So don’t wait for that perfect moment. Just begin. Take a single step, however small.<br>“The journey of a thousand miles begins with a single step.”</p>
+          <p>And as we move through our three days of debate, I invite you to keep one thought close to your heart: “To where courage leads you.” Ultimately, it will be courage that will open doors, break barriers, and create change.</p>
+          <p>Wrapping up my letter, welcome again to the Disarmament and International Security Committee (DISEC) for this year’s conference. I hope you enjoy the conference, and I hope we can discover together where courage leads each of us.</p>
+          <p class="signature">Sincerely,<br>Serin Kim<br>Chair of the Disarmament and International Security Committee, KISMUN 2025</p>
+        </div>
+      </div>
+    </article>
+
+<!-- SHORT CHAIR REPORT -->
+<section class="card panel chair-report">
+  <h3>Chair Report</h3>
+
+  <a 
+    href="./chair-report/DISEC/KISMUN25_DISEC_01_Addressing the Threat of Bioterrorism through Enhanced Global Biosecurity Cooperation.pdf" 
+    class="btn primary" 
+    target="_blank">
+    View Report 1
+  </a>
+
+  <a 
+    href="./chair-report/DISEC/KISMUN25_DISEC_02_Combating the Illicit Trade of Small Arms and Light Weapons in Conflict Zones.pdf" 
+    class="btn primary" 
+    target="_blank">
+    View Report 2
+  </a>
+</section>
+
+
+  </div>
+</section>
+
+<section class="section photobooth">
+  <div class="container" style="text-align:center;">
+    <h2 style="margin-bottom:1.5rem;">KISMUN’25 DISEC GALLERY</h2>
+
+    <p style="margin-bottom:1.5rem;">Photography by Ha Ram Kim & Si Young Park</p>
+
+    <div class="gallery" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1rem; margin-bottom:2rem;">
+      <img src="./photogallery/disec/DSC09486.JPG" alt="Photo 1" style="aspect-ratio: 3 / 2; object-fit: cover; border-radius: 8px;">
+      <img src="./photogallery/disec/DSC09545.JPG" alt="Photo 2" style="aspect-ratio: 3 / 2; object-fit: cover; border-radius: 8px;">
+      <img src="./photogallery/disec/DSC09621.JPG" alt="Photo 3" style="aspect-ratio: 3 / 2; object-fit: cover; border-radius: 8px;">
+    </div>
+    <a href="https://drive.google.com/drive/folders/1DezynRZNBi7iKQpXLGeQtv5KyjODLDrb?usp=sharing" target="_blank" class="btn" style="background:#0f2a47; border:1px solid #1c3b63; color:#fff; text-decoration:none; padding:0.8rem 1.6rem; border-radius:6px; font-weight:600; transition:all 0.25s;">
+      View Full Gallery →
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="small">
+      © 2025 KISMUN. All Rights Reserved.<br>
+      Designed & Developed by the KISMUN Web Master Team.
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox"><img alt=""/></div>
+<script src="assets/app.js"></script>
+</body>
+</html>

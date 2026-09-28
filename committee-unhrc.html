@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>KISMUN’25 – UNHRC</title>
+  <link rel="stylesheet" href="/assets/styles.css"/>
+  <link rel="icon" href="/assets/logo.png" type="image/png">
+  <style>
+    .card.panel {
+      padding: 2rem;
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+    .card.panel h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    .letter {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+    .letter .person__img img {
+      border-radius: 12px;
+      max-width: 200px;
+      height: auto;
+    }
+    .letter .content {
+      flex: 1;
+      text-align: left; /* ✅ 텍스트만 왼쪽 정렬 */
+    }
+    .letter p {
+      margin-bottom: 1rem;
+    }
+    .letter .signature {
+      margin-top: 1.5rem;
+      font-style: italic;
+    }
+
+    @media (max-width: 768px) {
+      .letter {
+        flex-direction: column;
+        text-align: left;
+      }
+      .letter .person__img {
+        text-align: center;
+      }
+      .letter .person__img img {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .chair-report {
+      background: rgba(255,255,255,0.08);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+    .chair-report a.btn {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #0f2a47;
+      border: 1px solid #1c3b63;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.8rem 1.6rem;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: all 0.25s;
+    }
+
+    .photobooth h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+    .gallery img {
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+      width: 100%;
+    }
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body class="unhrc-page">
+
+<header class="nav">
+  <div class="container inner">
+    <div class="brand">
+      <div class="brand__logo"></div>
+      <div class="brand__name">KISMUN’25</div>
+    </div>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="conference.html">Conference Information</a>
+      <a href="country-allocation.html">Country Allocation</a>
+      <a href="committee.html">Committee</a>
+      <a href="secretariats.html">Secretariat</a>
+      <a href="staff.html">Staff</a>
+      <a href="directors.html">Directors</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>UNHRC</h1>
+    <div class="spacer"></div>
+  </div>
+</section>
+
+<!-- MAIN SECTION -->
+<section id="report" class="section">
+  <div class="container" style="max-width:900px; margin:0 auto;">
+
+    <!-- HEAD CHAIR LETTER -->
+    <article class="card panel">
+      <div class="letter">
+        <div class="person__img">
+          <img src="./img/unhrc/head.jpg" alt="Head Chair photo">
+        </div>
+        <div class="content">
+          <div class="person__name" style="font-size:1.4rem; font-weight:600;">Jua Lee</div>
+          <div class="person__role" style="font-size:1.05rem; margin-bottom:1rem;">Head Chair</div>
+          <h3>Chair Letter</h3>
+          <p>Esteemed delegates, student officers, staff, and respected directors, welcome to KISMUN 2025! My name is Jua Lee, and I am deeply honored to serve you as the head chair of the United Nations Human Rights Council.</p>
+          <p>I still remember what it felt like to be a first-time delegate, sitting in the committee room with a placard in my hand, unsure when to speak and afraid that I might say something inappropriate, so I truly understand the anxiety that comes with stepping forward and finding the right words in a formal setting. But MUN is not about perfect speeches or flawless POIs. It is not a race for awards or titles. As for myself, I have attended six conferences so far and have never received an award, and there were moments when I felt left behind or discouraged. Still, what I gained was far more valuable than any certificate or award. I discovered my own voice, courage, and learned to value growth over recognition.</p>
+          <p>As the chair of a beginner committee, I am always in my position to support each of my delegates with patience and understanding. One of my priorities is to help you find the confidence to speak up, to ask questions, and to challenge yourself without fear. You are not expected to be perfect, but to be present, curious, and courageous. I hope that through this experience, you will come to understand what took me years to realize: that the true meaning of MUN lies in the journey, not the outcome. I look forward to seeing your passion, your ideas, and your willingness to grow throughout this conference. Remember, always follow where your courage leads you.</p>
+          <p class="signature">Warm regards,<br>Jua Lee,<br>Head Chair of United Nations Human Rights Council, KISMUN 2025.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- DEPUTY CHAIR LETTER -->
+    <article class="card panel">
+      <div class="letter">
+        <div class="person__img">
+          <img src="./img/unhrc/deputy.jpg" alt="Deputy Chair photo">
+        </div>
+        <div class="content">
+          <div class="person__name" style="font-size:1.4rem; font-weight:600;">Yujin Jeong</div>
+          <div class="person__role" style="font-size:1.05rem; margin-bottom:1rem;">Deputy Chair</div>
+          <h3>Chair Letter</h3>
+          <p>Honorable chairs and fellow delegates, and respected staff members, I am Yujin Jeong, the deputy chair of UNHRC. I’m truly pleased to serve as a chair and to welcome you all to KISMUN 2025.</p>
+          <p>My first KISMUN was back in 2023, and I was a delegate of the WHO committee. It was a difficult experience because of the pressure to perform well and the worry of “what if I make a mistake?”. I hesitated to raise my placard, talk to other delegates, and couldn't give a speech even when I wanted to say something, because I was afraid of POIs. But honestly, there’s nothing to be scared of. If you challenge yourself, and feel that you have developed compared to before, if you find bravery in yourself, and reach closer to your goals, then that courage itself already makes your KISMUN meaningful. What if you don’t do well, or make mistakes. What truly matters is the fact that you at least tried to challenge yourself. Just like this year’s slogan, “To where Courage Leads you”, I hope you can fill KISMUN with massive courage.</p>
+          <p>This KISMUN is also a huge challenge for me as it’s my first time serving as a chair. At the same time, it’s a very meaningful conference to me. Since it means so much to me, I sincerely hope it will be meaningful to you as well. For that to happen, my role is important. I’ll do my very best to be a strong, reliable supporter for you. My only goal for this year’s KISMUN is to let delegates realize the value of passion and challenge in a MUN journey.</p>
+          <p class="signature">Best regards,<br>Yujin Jeong,<br>Deputy Chair of United Nations Human Rights Council, KISMUN 2025.</p>
+        </div>
+      </div>
+    </article>
+
+<!-- SHORT CHAIR REPORT -->
+<section class="card panel chair-report">
+  <h3>Chair Report</h3>
+
+  <a 
+    href="./chair-report/UNHRC/KISMUN25_UNHRC_01_Addressing the Legality and Ethical Implications of Abortion Rights.pdf" 
+    class="btn primary" 
+    target="_blank">
+    View Report 1
+  </a>
+
+  <a 
+    href="./chair-report/UNHRC/KISMUN25_UNHRC_02_The Question of Combating Child Labor and Child Trafficking.pdf" 
+    class="btn primary" 
+    target="_blank">
+    View Report 2
+  </a>
+</section>
+
+  </div>
+</section>
+
+<section class="section photobooth">
+  <div class="container" style="text-align:center;">
+    <h2 style="margin-bottom:1.5rem;">KISMUN’25 UNHRC GALLERY</h2>
+    <p style="margin-bottom:1.5rem;">Photography by Minnie Kim & Yeon Je Cho</p>
+    <div class="gallery" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1rem; margin-bottom:2rem;">
+      <img src="./photogallery/unhrc/DSC01947.JPG" alt="Photo 1" style="aspect-ratio: 3 / 2; object-fit: cover; border-radius: 8px;">
+      <img src="./photogallery/unhrc/IMG_6502.JPG" alt="Photo 2" style="aspect-ratio: 3 / 2; object-fit: cover; border-radius: 8px;">
+      <img src="./photogallery/unhrc/IMG_6545.JPG" alt="Photo 3" style="aspect-ratio: 3 / 2; object-fit: cover; border-radius: 8px;">
+    </div>
+    <a href="https://drive.google.com/drive/folders/19wbj5Qfs5uw8B3GynWIDa-pOMF0MxN0Y?usp=sharing" target="_blank" class="btn" style="background:#0f2a47; border:1px solid #1c3b63; color:#fff; text-decoration:none; padding:0.8rem 1.6rem; border-radius:6px; font-weight:600; transition:all 0.25s;">
+      View Full Gallery →
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="small">
+      © 2025 KISMUN. All Rights Reserved.<br>
+      Designed & Developed by the KISMUN Web Master Team.
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox"><img alt=""/></div>
+<script src="assets/app.js"></script>
+</body>
+</html>

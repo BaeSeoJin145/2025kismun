@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>KISMUN’25 – HSC</title>
+  <link rel="stylesheet" href="/assets/styles.css"/>
+  <link rel="icon" href="/assets/logo.png" type="image/png">
+  <style>
+    .card.panel {
+      padding: 2rem;
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+    .card.panel h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    /* 인물 + 편지 레이아웃 */
+    .letter {
+      display: flex;
+      gap: 2rem;
+      text-align: left; /* ✅ 텍스트만 왼쪽 정렬 */
+    }
+    .letter .person__img img {
+      border-radius: 12px;
+      max-width: 200px;
+      height: auto;
+    }
+    .letter .content {
+      flex: 1;
+    }
+    .letter p {
+      margin-bottom: 1rem;
+    }
+    .letter .signature {
+      margin-top: 1.5rem;
+      font-style: italic;
+    }
+
+    @media (max-width: 768px) {
+      .letter {
+        flex-direction: column;
+        text-align: left;
+      }
+      .letter .person__img {
+        text-align: center;
+      }
+      .letter .person__img img {
+        margin-bottom: 1rem;
+      }
+    }
+
+    /* Chair Report */
+    .chair-report {
+      background: rgba(255,255,255,0.08);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+    .chair-report a.btn {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #0f2a47;
+      border: 1px solid #1c3b63;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.8rem 1.6rem;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: all 0.25s;
+    }
+
+    /* Gallery */
+    .photobooth h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+    .gallery img {
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+      width: 100%;
+    }
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body class="hsc-page">
+
+<header class="nav">
+  <div class="container inner">
+    <div class="brand">
+      <div class="brand__logo"></div>
+      <div class="brand__name">KISMUN’25</div>
+    </div>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="conference.html">Conference Information</a>
+      <a href="country-allocation.html">Country Allocation</a>
+      <a href="committee.html">Committee</a>
+      <a href="secretariats.html">Secretariat</a>
+      <a href="staff.html">Staff</a>
+      <a href="directors.html">Directors</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>HSC</h1>
+    <div class="spacer"></div>
+  </div>
+</section>
+
+<!-- MAIN SECTION -->
+<section id="report" class="section">
+  <div class="container" style="max-width:900px; margin:0 auto;">
+
+    <!-- HEAD CHAIR LETTER -->
+    <article class="card panel">
+      <div class="letter">
+        <div class="person__img">
+          <img src="./img/hsc/head.jpg" alt="Head Chair photo">
+        </div>
+        <div class="content">
+          <div class="person__name" style="font-size:1.4rem; font-weight:600;">Siwoo Yang</div>
+          <div class="person__role" style="font-size:1.05rem; margin-bottom:1rem;">Head Chair</div>
+          <h3>Chair Letter</h3>
+          <p>Esteemed delegates,</p>
+          <p>My name is Siwoo Yang, and I will be serving as your Head Chair, along with Yuchan Moon, for the Historical Security Council of KISMUN 2025. We welcome you to the beginning of HSC in KISMUN history, with the topic of “The Cuban Missile Crisis”.</p>
+          <p>Like everything else you will face in life, MUN is a place where your goal is to try at first, rather than to succeed at once. You will face challenges that will make you feel small. However, we eventually all realise how strong we’ve become by stepping outside that comfort zone, and by pushing ourselves to those challenges that were thought to be insurmountable.</p>
+          <p>For those of you who discover yourselves growing day by day and realise the joy of challenging, I believe it is time for you to set your goals to a new stage. As a chair of the Historical Security Council, it will be a pleasure for me to encourage you guys to a new phase of your MUN journey. We will now have to crave more than just to try, but show the house how strong you’ve become. You will face new responsibilities and sometimes have to burden yourself.</p>
+          <p>The new goals and destinations of your journey will be different for all of you, and will at first look insurmountable, again. But as we go through the 3 days of the conference, I guarantee each of you will eventually seize your moments, leading to the next chapter of your career.</p>
+          <p>Once again, welcome to the Historical Security Council, and we are truly delighted to hear your voices, writing down a new history of humanity. Like always, follow the path to where courage leads you.</p>
+          <p class="signature">Warmly,<br>Siwoo Yang<br>Head Chair of the Historical Security Council, KISMUN 2025</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- DEPUTY CHAIR LETTER -->
+    <article class="card panel">
+      <div class="letter">
+        <div class="person__img">
+          <img src="./img/hsc/deputy.jpg" alt="Deputy Chair photo">
+        </div>
+        <div class="content">
+          <div class="person__name" style="font-size:1.4rem; font-weight:600;">Yuchan Moon</div>
+          <div class="person__role" style="font-size:1.05rem; margin-bottom:1rem;">Deputy Chair</div>
+          <h3>Chair Letter</h3>
+          <p>Fellow Chairs, Esteemed Delegates, Dedicated Directors,</p>
+          <p>My name is Yuchan Moon, and I have the honor of serving as the Deputy Chair of the Historical Security Council at KISMUN 2025. It is my great pleasure to welcome you all to this year’s conference.</p>
+          <p>I would like to begin with a renowned quote from Albert Einstein: “Peace cannot be kept by force; it can only be achieved by understanding.” Even in times of great crisis, the true solution lies not in force, but in understanding. Throughout the sessions of KISMUN 2025, delegates will encounter countless opportunities to negotiate, collaborate, and seek compromise. I sincerely hope that you will use these chances to foster mutual understanding and work together to build meaningful resolutions addressing our agenda.</p>
+          <p>Allow me to also share a personal story. Just a year and a half ago, I attended my very first conference as the delegate of Brazil. Ironically, while intending to choose a less involved country, I had selected one that was a major stakeholder on the topic. As a beginner, my first speech was full of stuttering and uncertainty. Yet, I pushed myself to speak as much as possible. From that experience, I gained one of the most valuable lessons of my MUN journey: courage. Courage has since become my greatest strength, enabling me to stand with confidence even in formal debates. That is why I encourage you not to fear mistakes. Mistakes are not a source of embarrassment, but rather a foundation for growth.</p>
+          <p>To the delegates of the Historical Security Council in particular, I look forward to witnessing your thoughtful deliberations. Together with my fellow Chair, Siwoo Yang, I will do my best to ensure that your experience at KISMUN 2025 is both meaningful and memorable.</p>
+          <p class="signature">Best regards,<br>Yuchan Moon</p>
+        </div>
+      </div>
+    </article>
+
+<!-- SHORT CHAIR REPORT -->
+<section class="card panel chair-report">
+  <h3>Chair Report</h3>
+
+  <a 
+    href="./chair-report/HSC/KISMUN25_HSC_The Cuban Missile Crisis.pdf" 
+    class="btn primary" 
+    target="_blank">
+    View Report
+  </a>
+
+</section>
+
+  </div>
+</section>
+
+<section class="section photobooth">
+  <div class="container" style="text-align:center;">
+    <h2 style="margin-bottom:1.5rem;">KISMUN’25 HSC GALLERY</h2>
+    <p style="margin-bottom:1.5rem;">Photography by So Yoon Kim & Ajin Shin</p>
+    <div class="gallery" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1rem; margin-bottom:2rem;">
+      <img src="./photogallery/hsc/_DSC0009.JPG" alt="Photo 1" style="aspect-ratio: 3 / 2; object-fit: cover; border-radius: 8px;">
+      <img src="./photogallery/hsc/_DSC0012.JPG" alt="Photo 2" style="aspect-ratio: 3 / 2; object-fit: cover; border-radius: 8px;">
+      <img src="./photogallery/hsc/DSC_8563.JPG" alt="Photo 3" style="aspect-ratio: 3 / 2; object-fit: cover; border-radius: 8px;">
+    </div>
+    <a href="https://drive.google.com/drive/folders/13eurgn60DGGepePeiIxMMhEKZXdlAIrc?usp=sharing" target="_blank" class="btn" style="background:#0f2a47; border:1px solid #1c3b63; color:#fff; text-decoration:none; padding:0.8rem 1.6rem; border-radius:6px; font-weight:600; transition:all 0.25s;">
+      View Full Gallery →
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="small">
+      © 2025 KISMUN. All Rights Reserved.<br>
+      Designed & Developed by the KISMUN Web Master Team.
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox"><img alt=""/></div>
+<script src="assets/app.js"></script>
+</body>
+</html>

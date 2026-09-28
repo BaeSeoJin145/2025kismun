@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>KISMUN’25 – WHO(1)</title>
+  <link rel="stylesheet" href="/assets/styles.css"/>
+  <link rel="icon" href="/assets/logo.png" type="image/png">
+  <style>
+    .card.panel {
+      padding: 2rem;
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+    .card.panel h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    /* 인물 + 편지 레이아웃 */
+    .letter {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+    .letter .person__img img {
+      border-radius: 12px;
+      max-width: 200px;
+      height: auto;
+    }
+    .letter .content {
+      flex: 1;
+      text-align: left; /* ✅ 텍스트만 왼쪽 정렬 */
+    }
+    .letter p {
+      margin-bottom: 1rem;
+    }
+    .letter .signature {
+      margin-top: 1.5rem;
+      font-style: italic;
+    }
+
+    @media (max-width: 768px) {
+      .letter {
+        flex-direction: column;
+        text-align: left;
+      }
+      .letter .person__img {
+        text-align: center;
+      }
+      .letter .person__img img {
+        margin-bottom: 1rem;
+      }
+    }
+
+    /* Chair Report */
+    .chair-report {
+      background: rgba(255,255,255,0.08);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+    .chair-report a.btn {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #0f2a47;
+      border: 1px solid #1c3b63;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.8rem 1.6rem;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: all 0.25s;
+    }
+
+    /* Gallery */
+    .photobooth h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+    .gallery img {
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+      width: 100%;
+    }
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body class="who-page">
+
+<header class="nav">
+  <div class="container inner">
+    <div class="brand">
+      <div class="brand__logo"></div>
+      <div class="brand__name">KISMUN’25</div>
+    </div>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="conference.html">Conference Information</a>
+      <a href="country-allocation.html">Country Allocation</a>
+      <a href="committee.html">Committee</a>
+      <a href="secretariats.html">Secretariat</a>
+      <a href="staff.html">Staff</a>
+      <a href="directors.html">Directors</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>WHO(1)</h1>
+    <div class="spacer"></div>
+  </div>
+</section>
+
+<!-- MAIN SECTION -->
+<section id="report" class="section">
+  <div class="container" style="max-width:900px; margin:0 auto;">
+
+    <!-- HEAD CHAIR LETTER -->
+    <article class="card panel">
+      <div class="letter">
+        <div class="person__img">
+          <img src="./img/who(1)/head.jpg" alt="Head Chair photo">
+        </div>
+        <div class="content">
+          <div class="person__name" style="font-size:1.4rem; font-weight:600;">Jiwoo Nam</div>
+          <div class="person__role" style="font-size:1.05rem; margin-bottom:1rem;">Head Chair</div>
+          <h3>Chair Letter</h3>
+          <p>Esteemed delegates, staffs, guests, and directors,</p>
+          <p>Welcome to KISMUN 2025. I am Jiwoo Nam, and it is an honor to serve you as a chair with my co-chair Siwoo Kim in WHO. For all delegates in WHO, it is an overarching goal for us chairs to make a memorable experience in our 3-day conference.</p>
+          <p>The World Health Organization aims to improve global health, and for that goal, delegates must propose a solution to pursue their own benefits while achieving the global initiative of attaining the highest possible level of health. During the process, it is natural for delegates to collide and clash like tides against rocks. What matters though, is that by those collisions, the rock carves away, losing its sharp form. MUN is a process of carving a sharp edgy rock with the weakest waves. It may seem as if the waves would not do any damage, time and effort manages to carve it away. The time and effort you put in may be meager but not worthless. Your wave will finally hit the rock, and the results will show as time passes by.</p>
+          <p>MUN is nothing to be afraid of. It is a process of collaboration rather than contention, and a podium to express rather than to fear. Progress matters more than consequence, and the values we are looking for are in communication, not in speech. To where courage leads you is where you will discover, and us chairs are present to assist you throughout your journey. Your discovery on this journey may take different forms, but it is most important for you to not give up. So do not be afraid to raise your placards, rise from your chair and up on the podium, and let this journey begin.</p>
+          <p>Again, welcome to the World Health Organization of this year’s KISMUN. May this journey lead to discovery.</p>
+          <p class="signature">With gratitude,<br>Jiwoo Nam<br>Head Chair of the World Health Organization, KISMUN 2025.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- DEPUTY CHAIR LETTER -->
+    <article class="card panel">
+      <div class="letter">
+        <div class="person__img">
+          <img src="./img/who(1)/deputy.jpg" alt="Deputy Chair photo">
+        </div>
+        <div class="content">
+          <div class="person__name" style="font-size:1.4rem; font-weight:600;">Siwoo Kim</div>
+          <div class="person__role" style="font-size:1.05rem; margin-bottom:1rem;">Deputy Chair</div>
+          <h3>Chair Letter</h3>
+          <p>Honorable chairs, esteemed delegates, and esteemed guests,</p>
+          <p>My name is Siwoo Kim, serving as your Deputy chair for the committee of WHO. It is a great honor and pleasure for me to welcome you all for our KISMUN 2025. Together with Jiwoo Nam, I look forward to guiding you through what I believe will be the most constructive and fruitful debate in our conference.</p>
+          <p>To start off with my words, I would like to briefly talk about my own journey with MUN. I, as a 9th grader, had first joined the after school classes without acknowledging any of the procedures, rules, or expectations of MUN. I was only passionate for speaking English and connecting with others. Yet, the reality was far more daunting than I anticipated, as I was always the ‘shy kid’ denying to speak up, make either speeches or POIs. However, with the guidance of my former chairs and encouragement from teachers, I gradually found the courage and confidence to speak up and express my thoughts. Looking back, I realize that these experiences had shaped me into who I am today. It is this very journey that allows me to stand before you now, echoing the theme “To Where Courage Leads You.”</p>
+          <p>Initially of course, MUN would be very intimidating. Some of you may worry about public speaking, discussing diplomacy, and condemn ideas back and forth with other delegates. However, that is where, I believe, courage starts from.</p>
+          <p>The World Health Organization is the committee that is aiming to resolve the issues of global health and find the foremost solutions for all nations. These topics are not only highly relevant, but may also be deeply personal, as they touch on matters we all encounter in some ways. For this reason, I have no doubt that our sessions will be filled with bombing speeches, thought provoking questions, and dynamic debate.</p>
+          <p>For the upcoming 3 day journey, there may be moments when you feel weighed down by challenges, when all burdens you feel makes you want to remain silent, or when ideas don’t seem to come as sharply as you would like. However, just like what it's said, let your courage lead you and spread out your wings. Never hesitate to request the staff for help. At last, I truly believe each of you will walk away with something greater than just a resolution. You will be able to feel the most proudness from the deepest inside your heart and for sure have the most momentous memory.</p>
+          <p>Once again, welcome to the World Health Organization. With all your enthusiasm and delighted voices, I am more than welcome to accompany you on this journey: a journey to where courage leads you.</p>
+          <p class="signature">Best regards,<br>Siwoo Kim<br>Deputy Chair of the World Health Organization, KISMUN 2025</p>
+        </div>
+      </div>
+    </article>
+
+<!-- SHORT CHAIR REPORT -->
+<section class="card panel chair-report">
+  <h3>Chair Report</h3>
+
+  <a 
+    href="./chair-report/WHO/KISMUN25_ WHO_01_ Addressing the Lasting Effects of COVID-19 and Strategies for Post-Pandemic Recovery .pdf" 
+    class="btn primary" 
+    target="_blank">
+    View Report 1
+  </a>
+
+  <a 
+    href="./chair-report/WHO/KISMUN25_WHO_02_Reducing Maternal and Infant Mortality in Low-Income Regions.pdf" 
+    class="btn primary" 
+    target="_blank">
+    View Report 2
+  </a>
+
+  <a 
+    href="./chair-report/WHO/KISMUN25_WHO_03_The question of establishing international regulations for medical AI and digital health technologies.pdf" 
+    class="btn primary" 
+    target="_blank">
+    View Report 3
+  </a>
+</section>
+
+  </div>
+</section>
+
+<section class="section photobooth">
+  <div class="container" style="text-align:center;">
+    <h2 style="margin-bottom:1.5rem;">KISMUN’25 WHO(1) GALLERY</h2>
+    <p style="margin-bottom:1.5rem;">Photography by Jun Ho Kim & Jin Woo Park</p>
+    <div class="gallery" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1rem; margin-bottom:2rem;">
+      <img src="./photogallery/who(1)/_DSC8486.JPG" alt="Photo 1" style="aspect-ratio: 3 / 2; object-fit: cover; border-radius: 8px;">
+      <img src="./photogallery/who(1)/IMG_0102.JPG" alt="Photo 2" style="aspect-ratio: 3 / 2; object-fit: cover; border-radius: 8px;">
+      <img src="./photogallery/who(1)/IMG_0118.JPG" alt="Photo 3" style="aspect-ratio: 3 / 2; object-fit: cover; border-radius: 8px;">
+    </div>
+    <a href="https://drive.google.com/drive/folders/1m0qDkQq2xdZV3G3EXLl_eW4HDI-mNJ2r?usp=sharing" target="_blank" class="btn" style="background:#0f2a47; border:1px solid #1c3b63; color:#fff; text-decoration:none; padding:0.8rem 1.6rem; border-radius:6px; font-weight:600; transition:all 0.25s;">
+      View Full Gallery →
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="small">
+      © 2025 KISMUN. All Rights Reserved.<br>
+      Designed & Developed by the KISMUN Web Master Team.
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox"><img alt=""/></div>
+<script src="assets/app.js"></script>
+</body>
+</html>

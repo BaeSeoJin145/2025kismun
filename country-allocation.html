@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>KISMUN’25 – Country Allocation</title>
+<link rel="stylesheet" href="/assets/styles.css"/>
+<link rel="icon" href="/assets/logo.png" type="image/png">
+
+<style>
+/* ✅ 테이블 감싸는 래퍼 */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ✅ 테이블 기본 스타일 */
+.table-allocation {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  min-width: 350px; /* 너무 좁게 줄어들지 않게 */
+}
+.table-allocation thead {
+  background: #2c3e50;
+  color: #fff;
+}
+.table-allocation th, .table-allocation td {
+  padding: 0.9rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eaeaea;
+  white-space: nowrap;
+}
+
+/* ✅ 행 hover 제거 */
+.table-allocation tbody tr:hover {
+  background: none;
+  transition: none;
+}
+
+/* ✅ 버튼 스타일 */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  background: #2c7be5;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease-in-out;
+}
+.btn:hover {
+  background: #1a5fc9;
+}
+
+/* ✅ 카드 스타일 */
+.card.panel {
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  background: #fff;
+}
+
+/* ✅ 모바일 반응형 보정 */
+@media (max-width: 600px) {
+  .table-allocation th, .table-allocation td {
+    padding: 0.7rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .table-allocation {
+    font-size: 0.85rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.85rem;
+  }
+}
+</style>
+</head>
+
+<body class="conference-page">
+<header class="nav">
+  <div class="container inner">
+    <div class="brand">
+      <div class="brand__logo"></div>
+      <div class="brand__name">KISMUN’25</div>
+    </div>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="conference.html">Conference Information</a>
+      <a href="country-allocation.html">Country Allocation</a>
+      <a href="committee.html">Committee</a>
+      <a href="secretariats.html">Secretariat</a>
+      <a href="staff.html">Staff</a>
+      <a href="directors.html">Directors</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>COUNTRY ALLOCATION</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container card panel">
+    <h2 style="margin-bottom:1rem;">2025 KISMUN Country Allocation</h2>
+
+    <!-- ✅ 여기에 wrapper 추가 -->
+    <div class="table-wrapper">
+      <table class="table-allocation">
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Title</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="No.">1</td>
+            <td data-label="Title">Country Allocation Spreadsheet</td>
+            <td data-label="Link">
+              <a href="https://docs.google.com/spreadsheets/d/1Tezq2KxUADjxZ6i3ayauho93ylXPNnOMg8KYMOljl5E/edit?usp=sharing"
+                 target="_blank" class="btn">Open Sheet</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="small">
+      © 2025 KISMUN. All Rights Reserved.<br>
+      Designed & Developed by the KISMUN Web Master Team.
+    </div>
+  </div>
+</footer>
+</body>
+</html>
