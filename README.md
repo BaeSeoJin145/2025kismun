@@ -12,7 +12,7 @@ Korean International School Model United Nations(KISMUN) 2025 컨퍼런스 안�
 python3 -m http.server 8000
 ```
 
-브라우저에서 <http://localhost:8000>을 엽니다. CSS 일부가 `/assets/...` 같은 사이트 루트 경로를 사용하므로 HTML 파일을 직접 열지 말고 웹 서버를 통해 접속하세요.
+브라우저에서 <http://localhost:8000>을 엽니다. HTML과 CSS의 상대 경로를 사용하므로 GitHub Pages 프로젝트 하위 경로에서도 정적 자산을 불러옵니다. 로컬에서는 웹 서버로 접속하세요.
 
 ## 페이지 구성
 

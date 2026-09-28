@@ -12,7 +12,7 @@ The site is static and requires no package installation or build step. From the 
 python3 -m http.server 8000
 ```
 
-Open <http://localhost:8000> in a browser. Some stylesheets use site-root paths such as `/assets/...`, so serve the site over HTTP instead of opening the HTML files directly.
+Open <http://localhost:8000> in a browser. HTML and CSS use relative asset paths, so static files also load under a GitHub Pages project subpath. Serve the site over HTTP locally.
 
 ## Pages and files
 
